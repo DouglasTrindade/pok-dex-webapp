@@ -8,12 +8,12 @@ const pokemon = defineProps(["name", "imageUrl"]);
       <v-card class="cardPokemonList">
         <div class="d-flex flex-no-wrap justify-space-between">
           <div>
-            <v-card-title class="text-h5">{{ pokemon.name }}</v-card-title>
+            <v-card-title class="text-h5">{{ pokemon?.name }}</v-card-title>
             <v-card-subtitle>Ellie Goulding</v-card-subtitle>
           </div>
 
           <v-avatar class="w-50" rounded="0" size="150">
-            <v-img class="w-100" :src="pokemon.imageUrl" cover />
+            <v-img class="w-100" :src="pokemon?.imageUrl" cover />
           </v-avatar>
         </div>
       </v-card>
