@@ -1,3 +1,9 @@
+<script setup>
+import { ref } from "vue";
+
+const isDrawerOpen = ref(false);
+</script>
+
 <template>
   <v-container>
     <v-app-bar
@@ -19,7 +25,7 @@
         <router-link to="/pokedex" class="nav-link mx-2 font-weight-medium"
           >Pokédex</router-link
         >
-        <router-link to="/legendaries" class="nav-link mx-2 font-weight-medium"
+        <router-link to="/" class="nav-link mx-2 font-weight-medium"
           >Legendaries</router-link
         >
       </div>
@@ -50,7 +56,7 @@
         </v-list-item>
         <v-list-item
           router
-          to="/legendaries"
+          to="/"
           prepend-icon="mdi-fencing"
           class="text-black font-weight-medium"
         >
@@ -60,12 +66,6 @@
     </v-navigation-drawer>
   </v-container>
 </template>
-
-<script setup>
-import { ref } from "vue";
-
-const isDrawerOpen = ref(false);
-</script>
 
 <style scoped>
 .nav-link {
@@ -82,11 +82,11 @@ const isDrawerOpen = ref(false);
   width: 100%;
   height: 2px;
   background-color: black;
-  transform: scaleX(0); /* Inicialmente não visível */
+  transform: scaleX(0);
   transition: transform 0.3s ease;
 }
 
 .nav-link:hover::after {
-  transform: scaleX(1); /* Torna a linha visível */
+  transform: scaleX(1);
 }
 </style>

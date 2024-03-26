@@ -1,9 +1,5 @@
-<script>
-export default {
-  data: () => ({
-    icons: ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"],
-  }),
-};
+<script setup>
+const icons = ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"];
 </script>
 
 <template>
