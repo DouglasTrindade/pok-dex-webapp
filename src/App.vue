@@ -1,13 +1,5 @@
-<script>
+<script setup>
 import Footer from "./components/Footer.vue";
-import { defineComponent } from "vue";
-
-export default defineComponent({
-  name: "App",
-  components: {
-    Footer,
-  },
-});
 </script>
 
 <template>
