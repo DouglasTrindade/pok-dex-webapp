@@ -5,20 +5,18 @@ const isDrawerOpen = ref(false);
 </script>
 
 <template>
-  <v-container>
+  <v-container :fluid="true">
     <v-app-bar
       flat
-      class="border-b py-2 nav-bar-shadow"
+      class="border-b py-2 nav-bar-shadow px-16"
       style="background-color: #f5db13"
       elevation="4"
     >
       <v-btn icon @click="isDrawerOpen = !isDrawerOpen" class="d-md-none">
         <v-icon>mdi-menu</v-icon>
       </v-btn>
-      <v-app-bar-title>
-        <img src="/src/assets/pokemon-logo.png" alt="Pokémon Logo" />
-      </v-app-bar-title>
-      <div class="d-none d-md-flex justify-start align-center flex-grow-1">
+      <img class="ms-5" src="/src/assets/pokemon-logo.png" alt="Pokémon Logo" />
+      <div class="d-none d-md-flex justify-end align-center w-100">
         <router-link to="/" class="nav-link mx-2 font-weight-medium"
           >Home</router-link
         >

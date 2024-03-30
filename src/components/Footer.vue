@@ -3,8 +3,11 @@ const icons = ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"];
 </script>
 
 <template>
-  <v-footer class="d-flex flex-column" style="background-color: #000000">
-    <div class="d-flex align-center justify-content-center px-4">
+  <v-footer
+    class="d-flex flex-column justify-center align-center w-100"
+    style="background-color: #000000"
+  >
+    <div class="px-4">
       <v-btn
         v-for="icon in icons"
         :key="icon"
@@ -15,7 +18,7 @@ const icons = ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"];
       ></v-btn>
     </div>
 
-    <div class="px-4 py-2 bg-black text-center w-100 mt-auto">
+    <div class="px-4 py-2 bg-black w-100 mt-auto text-center">
       {{ new Date().getFullYear() }} — <strong>Douglas Trindade</strong>
     </div>
   </v-footer>

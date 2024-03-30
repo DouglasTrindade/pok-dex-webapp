@@ -3,18 +3,21 @@ const pokemon = defineProps(["name", "imageUrl"]);
 </script>
 
 <template>
-  <v-card class="cardPokemonList mx-auto col-4" max-width="400">
+  <v-card class="cardPokemonList mx-auto col-4" max-width="400" width="380px">
     <v-container>
       <v-card class="cardPokemonList">
         <div class="d-flex flex-no-wrap justify-space-between">
           <div>
             <v-card-title class="text-h5">{{ pokemon?.name }}</v-card-title>
-            <v-card-subtitle>Ellie Goulding</v-card-subtitle>
+            <v-card-subtitle>Pokemon</v-card-subtitle>
           </div>
 
-          <v-avatar class="w-50" rounded="0" size="150">
-            <v-img class="w-100" :src="pokemon?.imageUrl" cover />
-          </v-avatar>
+          <v-img
+            height="220px"
+            aspect-ratio="16/9"
+            cover
+            :src="pokemon?.imageUrl"
+          />
         </div>
       </v-card>
     </v-container>
@@ -23,22 +26,22 @@ const pokemon = defineProps(["name", "imageUrl"]);
 
 <style scoped>
 .cardPokemonList {
-  background: rgb(73, 78, 19);
+  background: rgb(245, 219, 19);
   background: linear-gradient(
     90deg,
-    rgba(73, 78, 19, 0.9948354341736695) 36%,
-    rgba(245, 239, 20, 1) 73%,
-    rgba(241, 255, 0, 1) 100%
+    rgba(245, 219, 19, 1) 0%,
+    rgba(245, 219, 19, 1) 50%,
+    rgba(250, 255, 189, 1) 100%
   );
   cursor: pointer;
 }
 .cardPokemonList:hover {
-  background: rgb(40, 43, 3);
+  background: rgb(250, 235, 89);
   background: linear-gradient(
     90deg,
-    rgba(40, 43, 3, 0.9948354341736695) 48%,
-    rgba(245, 239, 20, 1) 94%,
-    rgba(241, 255, 0, 1) 100%
+    rgba(250, 235, 89, 1) 0%,
+    rgba(250, 235, 89, 1) 50%,
+    rgba(250, 255, 189, 1) 100%
   );
 }
 </style>
