@@ -7,7 +7,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@jamescoyle/vue-icon": "github:jamescoyle/vue-icon",
     "@mdi/font": "7.0.96",
+    "@mdi/js": "^7.4.47",
     "roboto-fontface": "*",
     "vue": "^3.4.0",
     "vue-router": "^4.0.13",
