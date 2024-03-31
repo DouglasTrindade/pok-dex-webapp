@@ -101,7 +101,7 @@ const closeModal = () => {
     </v-container>
 
     <v-dialog max-width="800px" v-model="isDialogOpen">
-      <v-card class="overflow-hidden" rounded="lg">
+      <v-card class="overflow-hidden pb-4" rounded="lg">
         <div class="d-flex justify-end">
           <svg-icon
             class="cursor-pointer mx-3 my-3"
