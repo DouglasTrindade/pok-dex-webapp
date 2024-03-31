@@ -136,7 +136,7 @@ const closeModal = () => {
                   <v-row>
                     <v-col cols="6">
                       <div class="font-weight-medium text-h6">
-                        Health Points
+                        Healthy Points
                       </div>
                       <div class="text-capitalize">
                         {{ selectedPokemon.hp - 1 + "00000" }}
